@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>/
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <marquee class="bfr" behavior="" direction="left">Due To unpredictable supply chains because of the pandemic, orders
+        for accessories might be delayed.</marquee>
+
+
+    <nav class="navbar">
+        <div class="logo"><a href=""><img src="img/logo.avif" alt="logo"></a></div>
+        <ul class="nav-links">
+            <li><a href="#">SALE</a></li>
+            <li><a href="#">Smart phones</a></li>
+            <li><a href="#">Featured Phones</a></li>
+            <li><a href="#">Tablets</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#" id="cartButton">Cart (<span id="cartCount">0</span>)</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+
+
+
+
+    <main>
+
+
+        <div class="slider">
+            <div class="slider-wrapper">
+                <img src="img/image 1.webp" alt="Image 1" class="slide">
+                <img src="img/image 2.webp" alt="Image 2" class="slide">
+                <img src="img/image 3.webp" alt="Image 3" class="slide">
+                <img src="img/pic.webp" alt="Image 4" class="slide">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+
+
+        <div class="product-list">
+            <div class="product-item">
+                <img src="img/p 1.webp" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$10.00</p>
+                <button onclick="addToCart(1, 'Product 1', 10.00)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="img/p 11.webp" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$20.00</p>
+                <button onclick="addToCart(2, 'Product 2', 20.00)">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="img/p 7.webp" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$40.00</p>
+                <button onclick="addToCart(3, 'Product 3', 40.00)">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="img/p 4.webp" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>$60.00</p>
+                <button onclick="addToCart(4, 'Product 4', 60.00)">Add to Cart</button>
+            </div>
+
+
+            <!-- Add more product items as needed -->
+        </div>
+
+        <!-- Cart Modal -->
+        <div class="cart-modal" id="cartModal">
+            <div class="cart-content">
+                <h2>Your Cart</h2>
+                <ul id="cartItems"></ul>
+                <p>Total: $<span id="totalAmount">0.00</span></p>
+                <button onclick="checkout()">Checkout</button>
+                <button onclick="closeCart()">Close</button>
+            </div>
+        </div>
+
+
+        <div class="aboutus">
+            <div>
+                <h3>ABOUT US</h3>
+
+                <p>Founded in 2020 as most reliable online shopping place, Airkart (Owned by Best Cell Options Pvt.
+                    Ltd.) is one of the first brand in Pakistan to deliver authenticity and sell smart devices at great
+                    value. Today, we offer collections that are wide-ranging and varied for all ages. Our brand offers
+                    an eclectic mix of smart devices, accessories and all merchandise that are with the latest
+                    technologies and trends. We curate collections with a unique vision of what’s best for everyone
+                    without compromising on our vision to always offer inspiring brands with unbeatable value for money.
+                </p>
+
+                <button>Read More</button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <div class="last">
+
+            <div class="collect">
+                <h4>COLLECTION</h4>
+                <ul>
+                    <li>Apple Mobiles</li>
+                    <li>Samsung Mobiles</li>
+                    <li>Xiaomi Mobiles</li>
+                    <li>Tecno Mobiles</li>
+                    <li>TCL Mobiles</li>
+                    <li>Huawei Mobiles</li>
+                    <li>iTel Mobiles</li>
+                </ul>
+            </div>
+
+            
+
+            <div class="costomer">
+
+                <h4>COSTOMER CARE</h4>
+                <ul>
+                    <li>My Account</li>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                    <li>How to Order</li>
+                    <li>FAQs</li>
+                    <li>Blogs</li>
+
+                </ul>
+
+            
+
+                <div class="polic">
+                    <h4>POLICIES</h4>
+                    <ul>
+
+                        <li>Shipping & Cancellation Policy</li>
+                        <li> Return Policy</li>
+                        <li> Privacy Policy</li>
+                        <li> Terms & Conditions</li>
+                    </ul>
+
+                </div>
+          
+            
+
+                <div class="follow">
+
+                    <h4>FOLLLOW US ON</h4>
+                    <ul>
+                        <li> Facebook</li>
+                        <li> Instagram</li>
+                        <li> Youtube</li>
+                        <li> UAN: +92 3 111 555 142</li>
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
